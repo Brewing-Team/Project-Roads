@@ -318,6 +318,6 @@ wheel_node = NodePath("RearRightWheel")
 [node name="RearRightWheel" type="Node3D" parent="WheelRearRight"]
 
 [node name="wheel_003" type="MeshInstance3D" parent="WheelRearRight/RearRightWheel"]
-transform = Transform3D(0.918377, 0, 0, 0, 0, -1, 0, 1, 0, 1.01276, 0.311214, 1.54387)
+transform = Transform3D(0.918377, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1.01276, 0.311214, 1.54387)
 mesh = SubResource("ArrayMesh_07i4f")
 skeleton = NodePath("")
