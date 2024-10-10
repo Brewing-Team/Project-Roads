@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://bj5ncwtqkndyi"]
+
+[ext_resource type="Texture2D" uid="uid://7y05xb70oh3c" path="res://addons/kenney_prototype_textures/light/texture_06.png" id="1_3gww3"]
+[ext_resource type="PackedScene" uid="uid://1gfropwtqfbn" path="res://scenes/environment/WorldEnviroment.tscn" id="2_m1bk3"]
+[ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://addons/gevp/scenes/vehicle_controller.tscn" id="3_0ma0x"]
+[ext_resource type="PackedScene" uid="uid://cp1f2buixi0el" path="res://scenes/cars/debugCar.tscn" id="4_mjddk"]
+[ext_resource type="Script" path="res://addons/gevp/scripts/gui.gd" id="5_7lipl"]
+[ext_resource type="Script" path="res://addons/gevp/scripts/debug.gd" id="6_otbfo"]
+[ext_resource type="Script" path="res://addons/gevp/scripts/debug_ui.gd" id="7_nuvgx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vm3w8"]
+albedo_texture = ExtResource("1_3gww3")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l71ov"]
+size = Vector2(100, 100)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8leot"]
+data = PackedVector3Array(50, 0, 50, -50, 0, 50, 50, 0, -50, -50, 0, 50, -50, 0, -50, 50, 0, -50)
+
+[node name="Playground" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+material_override = SubResource("StandardMaterial3D_vm3w8")
+mesh = SubResource("PlaneMesh_l71ov")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_8leot")
+
+[node name="WorldEnviroment" parent="." instance=ExtResource("2_m1bk3")]
+timeOfDay = 1031.75
+simulateTime = false
+rateOfTime = 0.3
+
+[node name="VehicleController" parent="." node_paths=PackedStringArray("vehicle_node") instance=ExtResource("3_0ma0x")]
+vehicle_node = NodePath("car")
+
+[node name="car" parent="VehicleController" instance=ExtResource("4_mjddk")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.25241, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.999981, -0.00347609, 0.00500199, 0.0031123, 0.414318, 0.910127, -0.00523609, 0.910126, -0.414299, -0.353311, 29.4123, -21.7328)
+
+[node name="GUI" type="Control" parent="." node_paths=PackedStringArray("vehicle")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_7lipl")
+vehicle = NodePath("../VehicleController/car")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Speed" type="Label" parent="GUI/VBoxContainer"]
+layout_mode = 2
+
+[node name="RPM" type="Label" parent="GUI/VBoxContainer"]
+layout_mode = 2
+
+[node name="Gear" type="Label" parent="GUI/VBoxContainer"]
+layout_mode = 2
+
+[node name="Debug" type="Node" parent="." node_paths=PackedStringArray("vehicle")]
+script = ExtResource("6_otbfo")
+vehicle = NodePath("../VehicleController/car")
+
+[node name="DebugUI" type="Control" parent="Debug"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_nuvgx")
+metadata/_edit_use_anchors_ = true

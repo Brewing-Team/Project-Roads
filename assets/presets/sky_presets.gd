@@ -6,12 +6,12 @@ class_name SkyPreset
 @export_group("Sun Adjustments")
 @export_range(0,0.001,0.00001) var sunRadius : float = 0.0003
 @export_range(1500,10000,50) var sunEdgeBlur : float = 3600.0
-@export var sunLightIntensity : Curve = preload("res://Assets/Presets/default/sunLightIntensity.tres")
+@export var sunLightIntensity : Curve = preload("res://assets/presets/default/sunLightIntensity.tres")
 @export_range(0,1,0.01) var sunGlowIntensity : float = 0.45
 @export_group("Moon Adjustments")
 @export_range(0,0.001,0.00001) var moonRadius : float = 0.0003
 @export_range(1500,10000,50) var moonEdgeBlur : float = 10000.0
-@export var moonLightIntensity : Curve = preload("res://Assets/Presets/default/moonLightIntensity.tres")
+@export var moonLightIntensity : Curve = preload("res://assets/presets/default/moonLightIntensity.tres")
 @export_range(0,1,0.01) var moonGlowIntensity : float = 0.8
 @export_group("Horizon Adjustments")
 @export_range(1.0,7.0,0.1) var horizonSize : float = 3.0;
@@ -34,12 +34,12 @@ class_name SkyPreset
 @export_range(0.5, 5.0, 0.1) var twinkleScale : float = 4.0
 @export_range(0.0, 0.005, 0.0001) var starSpeed : float = 0.002
 @export_group("Color Curves")
-@export var baseSkyColor : GradientTexture1D = preload("res://Assets/Presets/default/baseSkyColor.tres")
-@export var baseCloudColor : GradientTexture1D = preload("res://Assets/Presets/default/baseCloudColor.tres")
-@export var overcastCloudColor : GradientTexture1D = preload("res://Assets/Presets/default/overcastCloudColor.tres")
-@export var horizonFogColor : GradientTexture1D = preload("res://Assets/Presets/default/horizonFogColor.tres")
-@export var sunLightColor : GradientTexture1D = preload("res://Assets/Presets/default/sunLight.tres")
-@export var sunDiscColor : GradientTexture1D = preload("res://Assets/Presets/default/sunDiscColor.tres")
-@export var sunGlow : GradientTexture1D = preload("res://Assets/Presets/default/sunGlowColor.tres")
-@export var moonLightColor : GradientTexture1D = preload("res://Assets/Presets/default/moonLight.tres")
-@export var moonGlowColor : GradientTexture1D = preload("res://Assets/Presets/default/moonGlowColor.tres")
+@export var baseSkyColor : GradientTexture1D = preload("res://assets/presets/default/baseSkyColor.tres")
+@export var baseCloudColor : GradientTexture1D = preload("res://assets/presets/default/baseCloudColor.tres")
+@export var overcastCloudColor : GradientTexture1D = preload("res://assets/presets/default/overcastCloudColor.tres")
+@export var horizonFogColor : GradientTexture1D = preload("res://assets/presets/default/horizonFogColor.tres")
+@export var sunLightColor : GradientTexture1D = preload("res://assets/presets/default/sunLight.tres")
+@export var sunDiscColor : GradientTexture1D = preload("res://assets/presets/default/sunDiscColor.tres")
+@export var sunGlow : GradientTexture1D = preload("res://assets/presets/default/sunGlowColor.tres")
+@export var moonLightColor : GradientTexture1D = preload("res://assets/presets/default/moonLight.tres")
+@export var moonGlowColor : GradientTexture1D = preload("res://assets/presets/default/moonGlowColor.tres")

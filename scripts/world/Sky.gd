@@ -16,7 +16,7 @@ extends WorldEnvironment
 @export var sunShadow : bool = true
 @export var moonShadow : bool = true
 @export_category("GodotSky Preset")
-@export var skyPreset : SkyPreset = preload("res://Assets/Presets/sky_default.tres")
+@export var skyPreset : SkyPreset = preload("res://assets/presets/sky_default.tres")
 
 # Get required node references
 @onready var sunMoonParent = $SunMoon
