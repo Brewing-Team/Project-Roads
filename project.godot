@@ -12,18 +12,22 @@ config_version=5
 
 config/name="Project Roads"
 config/version="v0.1"
-run/main_scene="res://Scenes/test.tscn"
+run/main_scene="res://scenes/test.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [file_customization]
 
 folder_colors={
-"res://Assets/": "purple",
-"res://Scenes/": "blue",
-"res://Scripts/": "pink"
+"res://assets/": "purple",
+"res://scenes/": "blue",
+"res://scripts/": "pink"
 }
 
 [physics]
 
 common/version="v0.1"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

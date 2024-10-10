@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj5ncwtqkndyi"]
+
+[ext_resource type="Resource" uid="uid://40lv2vl6tvmo" path="res://assets/presets/sky_default.tres" id="2_aivqd"]
+[ext_resource type="PackedScene" uid="uid://1gfropwtqfbn" path="res://scenes/environment/WorldEnviroment.tscn" id="2_npbj5"]
+[ext_resource type="PackedScene" uid="uid://u5lq1b0nl6ts" path="res://assets/models/debug_car/car.gltf" id="3_a72nf"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mo1gh"]
+load_path = "res://.godot/imported/texture_06.png-b82f487f43b0a45b96d420bd61d24ca3.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vm3w8"]
+albedo_texture = SubResource("CompressedTexture2D_mo1gh")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l71ov"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(91.6121, 0, 0, 0, 0.99768, 0, 0, 0, 91.6121, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_vm3w8")
+mesh = SubResource("PlaneMesh_l71ov")
+
+[node name="WorldEnviroment" parent="." instance=ExtResource("2_npbj5")]
+timeOfDay = 1031.75
+simulateTime = false
+rateOfTime = 0.3
+skyRotation = 0.0
+animateStarMap = true
+sunShadow = true
+moonShadow = true
+skyPreset = ExtResource("2_aivqd")
+
+[node name="car" parent="." instance=ExtResource("3_a72nf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.40998, 0)
