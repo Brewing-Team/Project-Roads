@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bj5ncwtqkndyi"]
 
-[ext_resource type="Texture2D" uid="uid://7y05xb70oh3c" path="res://addons/kenney_prototype_textures/light/texture_06.png" id="1_3gww3"]
+[ext_resource type="Texture2D" uid="uid://c5ds8f8kytyqj" path="res://addons/kenney_prototype_textures/light/texture_06.png" id="1_3gww3"]
 [ext_resource type="PackedScene" uid="uid://1gfropwtqfbn" path="res://scenes/environment/WorldEnviroment.tscn" id="2_m1bk3"]
 [ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://addons/gevp/scenes/vehicle_controller.tscn" id="3_0ma0x"]
 [ext_resource type="PackedScene" uid="uid://cp1f2buixi0el" path="res://scenes/cars/debugCar.tscn" id="4_mjddk"]
@@ -44,7 +44,6 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.2
 [node name="RacingChaseCamera" type="Camera3D" parent="VehicleController/car"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -1.25241, 0)
 script = ExtResource("5_d2we2")
-chase_mode = 0
 default_distance = 8.0
 
 [node name="GUI" type="Control" parent="." node_paths=PackedStringArray("vehicle")]
