@@ -22,7 +22,7 @@ cameraman="*res://addons/sk_racing_cameras/src/cameraman.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/sk_racing_cameras/plugin.cfg")
+enabled=PackedStringArray("res://addons/sk_racing_cameras/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
 
 [file_customization]
 
