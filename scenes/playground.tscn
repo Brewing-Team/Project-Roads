@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bj5ncwtqkndyi"]
+[gd_scene load_steps=16 format=3 uid="uid://bj5ncwtqkndyi"]
 
 [ext_resource type="Material" uid="uid://cpgqljaj5ebin" path="res://assets/materials/prototype_material_dark.tres" id="1_gtsed"]
 [ext_resource type="Material" uid="uid://dmod3n53ivvjr" path="res://assets/materials/prototype_material_light.tres" id="2_4khp3"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://addons/sk_racing_cameras/src/cameras/orbit_cam.gd" id="6_4ou5w"]
 [ext_resource type="Script" path="res://addons/gevp/scripts/debug.gd" id="6_otbfo"]
 [ext_resource type="Script" path="res://addons/gevp/scripts/debug_ui.gd" id="7_nuvgx"]
+[ext_resource type="PackedScene" uid="uid://b2hlchrj4h2b7" path="res://addons/gevp/scenes/engine_sound.tscn" id="8_kee6n"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_52bou"]
 top_radius = 0.2
@@ -268,6 +269,9 @@ default_distance = 8.0
 
 [node name="RacingOrbitCamera" type="Camera3D" parent="VehicleController/car"]
 script = ExtResource("6_4ou5w")
+
+[node name="EngineSound" parent="VehicleController/car" node_paths=PackedStringArray("vehicle") instance=ExtResource("8_kee6n")]
+vehicle = NodePath("..")
 
 [node name="GUI" type="Control" parent="." node_paths=PackedStringArray("vehicle")]
 layout_mode = 3

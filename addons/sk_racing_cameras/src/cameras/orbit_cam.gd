@@ -108,4 +108,3 @@ func _check_mouse_wheel(event:InputEvent) -> void:
 func _on_set_active() -> void:
 	_cam.current = _active
 	set_process_unhandled_input(_active)
-

@@ -54,6 +54,3 @@ static func next_cam_pos_key_pressed(event:InputEvent) -> bool:
 static func prev_cam_pos_key_pressed(event:InputEvent) -> bool:
 	return InputMap.has_action(ACTION_PREV_CAM_POS) \
 		and event.is_action_pressed(ACTION_PREV_CAM_POS)
-
-
-
