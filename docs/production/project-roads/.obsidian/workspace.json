@@ -159,11 +159,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "6010003c4a5e6a80",
+  "active": "fd64dd2a8a456e01",
   "lastOpenFiles": [
+    "Untitled Kanban.md",
     "Clippings/Custom Raycast Vehicle Physics in Godot   Suspensions.md",
     "Clippings/Custom Raycast Vehicle Physics in Godot 2  Acceleration.md",
     "Clippings/Unity Realistic Vehicle Physics - 1080p 60fps.md",
