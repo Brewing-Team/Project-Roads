@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://tlm452r8vurc"]
+[gd_scene load_steps=3 format=3 uid="uid://tlm452r8vurc"]
 
 [ext_resource type="PackedScene" uid="uid://1gfropwtqfbn" path="res://scenes/environment/WorldEnviroment.tscn" id="2_m1bk3"]
+[ext_resource type="PackedScene" uid="uid://ca04uci8xipcg" path="res://assets/models/playground/road.blend" id="2_qchbg"]
 
 [node name="Playground" type="Node3D"]
 
 [node name="WorldEnviroment" parent="." instance=ExtResource("2_m1bk3")]
 timeOfDay = 1054.5
 simulateTime = false
+
+[node name="road" parent="." instance=ExtResource("2_qchbg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75857, 0, 0.316278)

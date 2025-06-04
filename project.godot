@@ -23,6 +23,7 @@ enabled=PackedStringArray()
 
 folder_colors={
 "res://assets/": "purple",
+"res://docs/": "red",
 "res://scenes/": "blue",
 "res://scripts/": "pink"
 }
