@@ -11,10 +11,14 @@
             "id": "fd64dd2a8a456e01",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/Clippings/Custom Raycast Vehicle Physics in Godot   Suspensions.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Custom Raycast Vehicle Physics in Godot   Suspensions"
             }
           }
         ]
@@ -136,21 +140,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "docs/Clippings/Custom Raycast Vehicle Physics in Godot   Suspensions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Custom Raycast Vehicle Physics in Godot   Suspensions"
+            }
+          },
+          {
+            "id": "4d091bf3430e8053",
+            "type": "leaf",
+            "state": {
+              "type": "peerdraft-share-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Your Peerdraft Shares"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,17 +176,21 @@
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "peerdraft:Show my Peerdraft Shares": false
     }
   },
-  "active": "fd64dd2a8a456e01",
+  "active": "fba239a027299265",
   "lastOpenFiles": [
+    "docs/Templates",
+    "docs",
+    "Untitled.md",
+    "docs/Clippings/Custom Raycast Vehicle Physics in Godot   Suspensions.md",
+    "docs/Clippings/Custom Raycast Vehicle Physics in Godot 2  Acceleration.md",
     "Untitled Kanban.md",
-    "Clippings/Custom Raycast Vehicle Physics in Godot   Suspensions.md",
-    "Clippings/Custom Raycast Vehicle Physics in Godot 2  Acceleration.md",
-    "Clippings/Unity Realistic Vehicle Physics - 1080p 60fps.md",
-    "Clippings/New Unity Wheel - Collision and Physics Testing.md",
-    "Clippings",
+    "docs/Clippings/Unity Realistic Vehicle Physics - 1080p 60fps.md",
+    "docs/Clippings/New Unity Wheel - Collision and Physics Testing.md",
+    "docs/Clippings",
     "Welcome.md"
   ]
 }

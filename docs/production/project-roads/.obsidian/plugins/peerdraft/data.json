@@ -1,0 +1,60 @@
+{
+  "basePath": "https://www.peerdraft.app",
+  "subscriptionAPI": "https://www.peerdraft.app/subscription",
+  "connectAPI": "https://www.peerdraft.app/subscription/connect",
+  "sessionAPI": "https://www.peerdraft.app/session",
+  "sync": "wss://www.peerdraft.app/sync",
+  "signaling": "wss://www.peerdraft.app/signal",
+  "actives": "wss://www.peerdraft.app/actives",
+  "name": "mdoradom",
+  "root": "",
+  "plan": {
+    "type": "hobby",
+    "email": "mariodoradomartinez@gmail.com"
+  },
+  "duration": 0,
+  "debug": false,
+  "version": "2.13.1",
+  "serverShares": {
+    "files": [
+      [
+        "docs/Clippings/Custom Raycast Vehicle Physics in Godot   Suspensions.md",
+        {
+          "shareId": "c9ed3412-fbe1-4a70-b992-25c4af472154",
+          "persistenceId": "a3601254-2ff9-4299-b3a2-fe9c47c1533a"
+        }
+      ],
+      [
+        "docs/Clippings/Custom Raycast Vehicle Physics in Godot 2  Acceleration.md",
+        {
+          "shareId": "720329c4-23a2-4d6b-942a-db97af7f30f3",
+          "persistenceId": "09fc4cb0-d2df-4853-8309-5104dc1bc0f5"
+        }
+      ],
+      [
+        "docs/Clippings/New Unity Wheel - Collision and Physics Testing.md",
+        {
+          "shareId": "e54a242c-9d48-4bc0-8a1b-8beb55e9075f",
+          "persistenceId": "725bd26c-76f2-41d0-a92a-f5619d3941bc"
+        }
+      ],
+      [
+        "docs/Clippings/Unity Realistic Vehicle Physics - 1080p 60fps.md",
+        {
+          "shareId": "a75b05c1-5a34-4f41-a97d-0e3b004365d5",
+          "persistenceId": "1f949dfb-6d0c-4ed9-a4b1-94c44340bbb8"
+        }
+      ]
+    ],
+    "folders": [
+      [
+        "docs",
+        {
+          "shareId": "71d47fb4-2e10-437c-8d20-bae3007843d8",
+          "persistenceId": "72fd1640-e9e3-4a96-bb70-e0af176d022a"
+        }
+      ]
+    ]
+  },
+  "oid": "4855f7c93df650ad"
+}
