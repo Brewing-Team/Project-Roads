@@ -44,6 +44,90 @@
           "shareId": "a75b05c1-5a34-4f41-a97d-0e3b004365d5",
           "persistenceId": "1f949dfb-6d0c-4ed9-a4b1-94c44340bbb8"
         }
+      ],
+      [
+        "docs/Templates/note_template.md",
+        {
+          "shareId": "af1d51e4-7d99-4dde-9e97-6c7c6d4f0bef",
+          "persistenceId": "b33f2e10-436a-468c-9300-d40e9f3bc639"
+        }
+      ],
+      [
+        "docs/Lluvia de ideas.md",
+        {
+          "shareId": "4b74a41c-4257-408a-8f27-3402fd84d131",
+          "persistenceId": "0ad027ed-a757-4c9b-b2c3-a6c39ed358d7"
+        }
+      ],
+      [
+        "docs/Brainstorm.md",
+        {
+          "shareId": "18e2c3c7-7837-4ce6-8fdd-93e93fcce299",
+          "persistenceId": "6ae4b971-5d1c-4857-9bfa-e4c48d1284ff"
+        }
+      ],
+      [
+        "docs/Untitled.md",
+        {
+          "shareId": "a7a9ce1f-f110-4b88-82c7-7dce8d09a951",
+          "persistenceId": "041bbc2c-a55a-443c-8ab1-555d067cf9b5"
+        }
+      ],
+      [
+        "docs/test.canvas",
+        {
+          "shareId": "5a51b51f-f6e0-4911-a9a3-5769e65ce429",
+          "persistenceId": "a598920d-f4f0-4b3a-8b90-cc25e6face8e"
+        }
+      ],
+      [
+        "docs/Drawing 2025-06-04 16.33.41.excalidraw.md",
+        {
+          "shareId": "9760631c-bf03-4b96-bf64-ed843e4a6d7e",
+          "persistenceId": "2fc3084e-6cf4-42e7-8376-e2be30a6a1a5"
+        }
+      ],
+      [
+        "docs/Devlogs.md",
+        {
+          "shareId": "51c859e9-4b72-4148-982e-44e4fe48e1c5",
+          "persistenceId": "dfa5faf4-b201-43d9-b264-ae8d45adb972"
+        }
+      ],
+      [
+        "docs/Clippings/GORECORE.md",
+        {
+          "shareId": "fabf818e-01fb-4e69-bbce-13a18d9c8948",
+          "persistenceId": "00c21839-57ae-41fe-b71d-9cd7a0d77d20"
+        }
+      ],
+      [
+        "docs/Clippings/Blargis.md",
+        {
+          "shareId": "510fb3a6-c14b-4432-9565-64efd8e1ba83",
+          "persistenceId": "a101a1ca-592b-4163-83e3-fb3fe561a98f"
+        }
+      ],
+      [
+        "docs/Clippings/Drenindok.md",
+        {
+          "shareId": "0cd130c4-7805-4a09-a360-63d9d8fb4645",
+          "persistenceId": "941601cd-6477-4367-959c-cf5a65e0002a"
+        }
+      ],
+      [
+        "docs/Clippings/Crushing Cars - Devlog 5 (PS1.5 style game).md",
+        {
+          "shareId": "1bb862f4-6fa8-4953-8e2f-03964474f538",
+          "persistenceId": "d95dcad6-7269-4ac9-b78b-90d0fc36b622"
+        }
+      ],
+      [
+        "docs/Clippings/Crushing Cars - Devlog 5 (PS1.5 style game) 1.md",
+        {
+          "shareId": "06ccc4ef-fd7f-4ea2-bcd7-53ee049e0447",
+          "persistenceId": "d9cd7ca9-b335-4631-9945-13eb0540dc1c"
+        }
       ]
     ],
     "folders": [
