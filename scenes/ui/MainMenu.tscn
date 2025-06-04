@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1xmj7pprckwc"]
 
-[ext_resource type="Script" path="res://scripts/ui/MainMenu.gd" id="1_f0sve"]
-[ext_resource type="Script" path="res://scripts/ui/ProjectVersion.gd" id="1_x4rba"]
+[ext_resource type="Script" uid="uid://cg4v0wb5tcul4" path="res://scripts/ui/MainMenu.gd" id="1_f0sve"]
+[ext_resource type="Script" uid="uid://cc2aa7jndegdy" path="res://scripts/ui/ProjectVersion.gd" id="1_x4rba"]
 [ext_resource type="PackedScene" uid="uid://bbr1w4fimrw1i" path="res://scenes/ui/SettingsMenu.tscn" id="4_81mbv"]
 
 [node name="MainMenu" type="MarginContainer"]

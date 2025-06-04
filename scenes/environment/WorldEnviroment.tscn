@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://1gfropwtqfbn"]
 
 [ext_resource type="Environment" uid="uid://wwq6f40kybqq" path="res://assets/environment/default_environment.tres" id="1_51rye"]
-[ext_resource type="Script" path="res://scripts/world/Sky.gd" id="2_0h6b1"]
+[ext_resource type="Script" uid="uid://cqhmp8p4kevkj" path="res://scripts/world/Sky.gd" id="2_0h6b1"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_pkqrv"]
 

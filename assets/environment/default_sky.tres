@@ -1,11 +1,11 @@
 [gd_resource type="Sky" load_steps=14 format=3 uid="uid://bq7217qbtqsdc"]
 
-[ext_resource type="Shader" path="res://assets/shaders/GodotSky.gdshader" id="1_ntbuj"]
-[ext_resource type="Texture2D" uid="uid://cnl852air6g7q" path="res://assets/textures/sky/StaticCloudsAlpha.tga" id="2_r0vtv"]
-[ext_resource type="Texture2D" uid="uid://chk144tfviq2e" path="res://assets/textures/sky/StaticCloudsXY.tga" id="3_a1ag0"]
-[ext_resource type="Texture2D" uid="uid://dnj6ylyuxc6w3" path="res://assets/textures/sky/scatteringLUT.HDR" id="4_6a7nw"]
-[ext_resource type="Texture2D" uid="uid://bru7upxvlt3kp" path="res://assets/textures/sky/Stars_Noise.TGA" id="5_thi1f"]
-[ext_resource type="Texture2D" uid="uid://besoril5mkfd6" path="res://assets/textures/sky/starmap_8k.jpg" id="6_k4p5r"]
+[ext_resource type="Shader" uid="uid://djd6b17btc14m" path="res://assets/shaders/GodotSky.gdshader" id="1_ntbuj"]
+[ext_resource type="Texture2D" uid="uid://dmk87f6oskm0q" path="res://assets/textures/sky/StaticCloudsAlpha.tga" id="2_r0vtv"]
+[ext_resource type="Texture2D" uid="uid://bvie4rjs5ri8d" path="res://assets/textures/sky/StaticCloudsXY.tga" id="3_a1ag0"]
+[ext_resource type="Texture2D" uid="uid://wn3lsxucrscx" path="res://assets/textures/sky/scatteringLUT.HDR" id="4_6a7nw"]
+[ext_resource type="Texture2D" uid="uid://bvpbd7ft2dook" path="res://assets/textures/sky/Stars_Noise.TGA" id="5_thi1f"]
+[ext_resource type="Texture2D" uid="uid://06cn6nh81qif" path="res://assets/textures/sky/starmap_8k.jpg" id="6_k4p5r"]
 
 [sub_resource type="Gradient" id="Gradient_t43f0"]
 interpolation_mode = 2
@@ -55,6 +55,7 @@ noise = SubResource("FastNoiseLite_w5yig")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s44jw"]
 shader = ExtResource("1_ntbuj")
 shader_parameter/baseColor = Color(0.204346, 0.344014, 0.5625, 1)
+shader_parameter/scatteringLUT = ExtResource("4_6a7nw")
 shader_parameter/scatterColor = Color(1, 1, 1, 1)
 shader_parameter/scatterColor2 = Color(1, 1, 1, 1)
 shader_parameter/bAnimClouds = false
@@ -64,18 +65,22 @@ shader_parameter/sunRadius = 0.0003
 shader_parameter/sunEdgeBlur = 3600.0
 shader_parameter/sunDiscColor = Color(0.737255, 0.694118, 0.603922, 1)
 shader_parameter/sunGlowColor = Color(1, 0.955033, 0.827864, 1)
-shader_parameter/sunlightColor = null
+shader_parameter/sunlightColor = Vector3(0, 0, 0)
 shader_parameter/sunGlowIntensity = 0.45
 shader_parameter/moonRadius = 0.0003
 shader_parameter/moonEdgeBlur = 10000.0
 shader_parameter/moonGlowColor = Color(1, 1, 1, 0)
-shader_parameter/moonLightColor = null
+shader_parameter/moonLightColor = Vector3(0, 0, 0)
 shader_parameter/moonGlowIntensity = 0.8
 shader_parameter/baseCloudColor = Color(1, 1, 1, 1)
 shader_parameter/cloudDensity = 4.25
 shader_parameter/cloudEdge = 0.0
 shader_parameter/cloudCoverage = 0.588
 shader_parameter/cloudDirection = Vector2(1, 1)
+shader_parameter/cloudTexture = ExtResource("2_r0vtv")
+shader_parameter/cloudTexture2 = ExtResource("3_a1ag0")
+shader_parameter/cloudNoise = SubResource("NoiseTexture2D_dmhbf")
+shader_parameter/weatherMap = SubResource("NoiseTexture2D_lxafx")
 shader_parameter/mgSize = 0.92
 shader_parameter/cloudAlpha = 1.0
 shader_parameter/cloudSpeed = 0.0003
@@ -83,22 +88,17 @@ shader_parameter/absorption = 5.0
 shader_parameter/henyeyGreensteinLevel = 0.69
 shader_parameter/dynamicCloudBrightness = 0.9
 shader_parameter/horizonUVCurve = 0.5
-shader_parameter/horizonFogColor = Color(0.789483, 0.876364, 0.944178, 1)
+shader_parameter/horizonFogColor = Color(0.799283, 0.887013, 0.958082, 1)
 shader_parameter/horizonAlpha = 1.0
 shader_parameter/horizonSize = 3.0
+shader_parameter/starTexture = ExtResource("6_k4p5r")
+shader_parameter/starNoise = ExtResource("5_thi1f")
 shader_parameter/starColor = Color(0.43, 0.55, 0.91, 1)
 shader_parameter/starBrightness = 0.2
 shader_parameter/twinkleSpeed = 0.025
 shader_parameter/twinkleScale = 4.0
 shader_parameter/starResolution = 1.0
 shader_parameter/starSpeed = 0.002
-shader_parameter/scatteringLUT = ExtResource("4_6a7nw")
-shader_parameter/cloudTexture = ExtResource("2_r0vtv")
-shader_parameter/cloudTexture2 = ExtResource("3_a1ag0")
-shader_parameter/cloudNoise = SubResource("NoiseTexture2D_dmhbf")
-shader_parameter/weatherMap = SubResource("NoiseTexture2D_lxafx")
-shader_parameter/starTexture = ExtResource("6_k4p5r")
-shader_parameter/starNoise = ExtResource("5_thi1f")
 
 [resource]
 sky_material = SubResource("ShaderMaterial_s44jw")
